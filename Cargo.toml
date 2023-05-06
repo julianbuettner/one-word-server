@@ -1,0 +1,12 @@
+[package]
+name = "one-word-server"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/julianbuettner/one-word-server"
+description = "Serve a word, randomly chosen at startup."
+license = "MIT"
+
+[dependencies]
+axum = "0.6.18"
+random_word = "0.3.0"
+tokio = { version = "1.28.0", features = ["rt", "net", "macros", "rt-multi-thread"] }
