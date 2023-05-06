@@ -38,7 +38,7 @@ spec:
       - name: build
         image: rust:latest
         command:
-          - cargo
-          - run
-          - one-word-server
+          - sh
+          - -s
+          - "apt-get update; apt-get install -y gcc; cargo install one-word-server; one-world-server"
 ```
